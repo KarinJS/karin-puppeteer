@@ -1,0 +1,32 @@
+# 请不要直接修改此文件，复制重命名为 config.yaml 并修改其中的配置项。
+
+log_level: 'info'
+
+# karin 地址
+karinUrl: 'ws://localhost:7000/puppeteer'
+
+# 请求头id，用于标识请求头
+headerId: 'puppeteer'
+
+# chromium 地址，填写edge/chromium的绝对路径，不推荐使用，自带的 chromium 更适合作为无头浏览器使用。
+chromiumPath:
+
+# puppeteer websocket 地址。连接单独存在的 chromium。
+# puppeteerWS: 'ws://browserless:3000'
+puppeteerWS:
+
+# headless 模式
+headless: true
+
+# puppeteer启动args，注意args的--前缀
+args:
+  - --disable-gpu
+  - --disable-setuid-sandbox
+  - --no-sandbox
+  - --no-zygote
+
+# 创建页面到达多少重启 chromium
+createPageCount: 100
+
+# 页面超时时间 默认10秒
+timeout: 10000

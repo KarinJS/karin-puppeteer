@@ -1,0 +1,16 @@
+{
+    "name": "karin-plugin-puppeteer",
+    "version": "0.0.1",
+    "author": "Lain",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "init": "node install.js"
+    },
+    "dependencies": {
+        "puppeteer": "13.7.0",
+        "ws": "8.5.0",
+        "yaml": " 2.4.1",
+        "log4js": "6.9.1"
+    }
+}
