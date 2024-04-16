@@ -2,8 +2,9 @@
 
 log_level: 'info'
 
-# karin 地址
-karinUrl: 'ws://localhost:7000/puppeteer'
+# karin 地址 可填写多个
+karinUrl: 
+  - 'ws://localhost:7000/puppeteer'
 
 # 请求头id，用于标识请求头
 headerId: 'puppeteer'
