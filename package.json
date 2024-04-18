@@ -1,5 +1,5 @@
 {
-    "name": "karin-plugin-puppeteer",
+    "name": "karin-puppeteer",
     "version": "0.0.1",
     "author": "Lain",
     "main": "index.js",

@@ -7,7 +7,7 @@
 ### 克隆仓库
 
 ```bash
-git clone https://github.com/KarinJS/karin-plugin-puppeteer.git
+git clone https://github.com/KarinJS/karin-puppeteer.git
 ```
 
 ### 安装依赖
