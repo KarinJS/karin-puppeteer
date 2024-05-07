@@ -28,6 +28,13 @@ node init
 node .
 ```
 
+### 后台运行
+
+```bash
+pnpm start
+```
+
+
 ### 配置文件
 
 请自行查看`config/config_default.yaml`，支持多个服务端

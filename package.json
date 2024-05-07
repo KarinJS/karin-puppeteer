@@ -5,12 +5,18 @@
     "main": "index.js",
     "type": "module",
     "scripts": {
-        "init": "node install.js"
+        "init": "node install.js",
+        "app": "node index.js",
+        "start": "pm2 start ./config/pm2/pm2.json",
+        "stop": "pm2 stop ./config/pm2/pm2.json",
+        "restart": "pm2 restart ./config/pm2/pm2.json",
+        "log": "pm2 logs --lines 400 karin-puppeteer"
     },
     "dependencies": {
         "puppeteer": "13.7.0",
         "ws": "8.5.0",
         "yaml": " 2.4.1",
-        "log4js": "6.9.1"
+        "log4js": "6.9.1",
+        "pm2": "^5.3.1"
     }
 }
