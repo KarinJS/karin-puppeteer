@@ -7,6 +7,8 @@ http:
   enable: false
   # HTTP 服务端口
   port: 7005
+  # 令牌
+  token: "Karin-Puppeteer"
 
 # karin 地址 可填写多个
 karinUrl:
@@ -38,3 +40,11 @@ createPageCount: 100
 
 # 页面超时时间 默认15秒
 timeout: 15000
+
+# waitUntil参数设置 以下为可选值，对于纯静态页面，可以使用false
+# false - 不等待任何事件，直接跳过等待，生成截图
+# load - 页面的load事件触发时，代表页面所有资源都加载完毕才进行截图
+# domcontentloaded - DOM树已经构建完毕，此时页面还在加载，慎用此选项
+# networkidle0 - 网络空闲时触发，即网络连接数为0时触发 推荐使用此选项
+# networkidle2 - 网络空闲时触发，即500毫秒内没有网络连接时触发 时间较久(500ms) 推荐使用networkidle0
+waitUntil: networkidle0
