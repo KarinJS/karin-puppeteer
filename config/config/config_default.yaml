@@ -38,8 +38,8 @@ args:
 # 创建页面到达多少重启 chromium
 createPageCount: 100
 
-# 页面超时时间 默认15秒
-timeout: 15000
+# 页面超时时间 默认90秒
+timeout: 90000
 
 # waitUntil参数设置 以下为可选值，对于纯静态页面，可以使用false
 # load - 页面的load事件触发时，代表页面所有资源都加载完毕才进行截图
