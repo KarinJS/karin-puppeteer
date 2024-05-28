@@ -7,7 +7,7 @@ import Puppeteer from './lib/puppeteer/puppeteer.js'
 const { server, karinUrl, headerId } = Config.Config
 
 /** 创建 WebSocket 连接 */
-if (server.ws) {
+if (server.ws && Array.isArray(karinUrl)) {
   for (let url of karinUrl) {
     const client = new Client(url, headerId)
     client.createWebSocket()
