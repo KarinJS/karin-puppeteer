@@ -32,10 +32,12 @@ waitUntil: networkidle2
 # 默认setViewport参数设置
 setViewport:
   # 是否启用
-  enable: false
+  enable: true
+  # 使用body的宽高
+  useBody: true
   # 宽度 请设置整数
   width: 1920
   # 高度 请设置整数
   height: 1080
   # 像素比 图片质量
-  deviceScaleFactor: 1
+  deviceScaleFactor: 2
