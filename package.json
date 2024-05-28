@@ -1,15 +1,17 @@
 {
   "name": "karin-puppeteer",
-  "version": "1.0.1",
-  "author": "Lain",
+  "version": "1.1.0",
+  "author": "CalmLexi",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "init": "node install.js",
     "app": "node index.js",
-    "start": "pm2 start ./config/pm2/pm2.json",
-    "stop": "pm2 stop ./config/pm2/pm2.json",
-    "restart": "pm2 restart ./config/pm2/pm2.json",
+    "cnpm": "node ./lib/tools/cnpm.js",
+    "init": "node ./lib/tools/init.js",
+    "monit": "pm2 monit",
+    "start": "pm2 start ./config/config/pm2.yaml && pm2 monit",
+    "stop": "pm2 delete ./config/config/pm2.yaml",
+    "restart": "pm2 restart ./config/config/pm2.yaml",
     "log": "pm2 logs --lines 400 karin-puppeteer"
   },
   "dependencies": {
@@ -21,6 +23,10 @@
     "express": "4.19.2"
   },
   "devDependencies": {
-    "eslint": "8.57.0"
+    "eslint": "8.57.0",
+    "eslint-config-standard": "^17.1.0"
+  },
+  "imports": {
+    "#karin": "./lib/imports/index.js"
   }
 }

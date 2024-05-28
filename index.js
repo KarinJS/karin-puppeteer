@@ -1,17 +1,17 @@
-import { Config } from './lib/common/common.js'
-import HttpServer from './lib/server/HttpServer.js'
-import WebSocketClient from './lib/server/WebSocket.js'
+import './lib/config/init.js'
+import './lib/server/express.js'
+import Config from './lib/config/config.js'
+import Client from './lib/server/Client.js'
+import Puppeteer from './lib/puppeteer/puppeteer.js'
 
-const { karinUrl, headerId } = Config
+const { server, karinUrl, headerId } = Config.Config
 
 /** 创建 WebSocket 连接 */
-for (let url of karinUrl) {
-  const client = new WebSocketClient(url, headerId)
-  client.createWebSocket()
+if (server.ws) {
+  for (let url of karinUrl) {
+    const client = new Client(url, headerId)
+    client.createWebSocket()
+  }
 }
 
-/** 创建 HTTP 服务器 */
-if (Config.http.enable) {
-  const { port } = Config.http
-  new HttpServer(port).init()
-}
+export default Puppeteer

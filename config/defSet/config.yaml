@@ -1,0 +1,23 @@
+# 日志等级
+log_level: "info"
+
+# 请求头id，反向ws 用于标识请求头
+headerId: "puppeteer"
+
+# server 启用
+server:
+  # 是否启用HTTP服务 启用HTTP的同时也会启用WebSocket服务
+  http: true
+  # 是否启用WebSocket服务
+  ws: true
+
+# HTTP 服务配置
+http:
+  # HTTP 服务端口
+  port: 7005
+  # 令牌
+  token: "Karin-Puppeteer"
+
+# karin 反向地址 可填写多个
+karinUrl:
+  - "ws://localhost:7000/puppeteer"

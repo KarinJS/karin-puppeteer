@@ -1,21 +1,5 @@
-# 日志等级
-log_level: "info"
-
-# HTTP 服务配置
-http:
-  # 是否启用
-  enable: false
-  # HTTP 服务端口
-  port: 7005
-  # 令牌
-  token: "Karin-Puppeteer"
-
-# karin 地址 可填写多个
-karinUrl:
-  - "ws://localhost:7000/puppeteer"
-
-# 请求头id，用于标识请求头
-headerId: "puppeteer"
+# 调试模式 打开后不会关闭浏览器、标签页
+debug: false
 
 # chromium 地址，填写edge/chromium的绝对路径，不推荐使用，自带的 chromium 更适合作为无头浏览器使用。
 chromiumPath:
@@ -35,9 +19,6 @@ args:
   - --disable-extensions #"禁用所有浏览器扩展"
   - --disable-dev-shm-usage #"避免使用/dev/shm，使用/tmp"
 
-# 创建页面到达多少重启 chromium
-createPageCount: 100
-
 # 页面超时时间 默认90秒
 timeout: 90000
 
@@ -46,17 +27,15 @@ timeout: 90000
 # domcontentloaded - DOM树已经构建完毕，此时页面还在加载，如果纯静态页面，可以使用此参数
 # networkidle0 - 网络空闲时触发，即网络连接数为0时触发
 # networkidle2 - 网络空闲时触发，即500毫秒内没有网络连接时触发 时间较久(500ms)
-waitUntil: load
+waitUntil: networkidle2
 
 # 默认setViewport参数设置
 setViewport:
-  # 使用body的宽高 启用后则默认参数无效
-  useBody: false
-  # 默认参数
-  data:
-    # 宽度 请设置整数
-    width: 1920
-    # 高度 请设置整数
-    height: 1080
-    # 像素比 图片质量
-    deviceScaleFactor: 1
+  # 是否启用
+  enable: false
+  # 宽度 请设置整数
+  width: 1920
+  # 高度 请设置整数
+  height: 1080
+  # 像素比 图片质量
+  deviceScaleFactor: 1

@@ -1,7 +1,9 @@
 # 简介
 
 适用于 [Karin](https://github.com/KarinJS/karin.git) 的`Puppeteer`  
+
 本仓库使用的`Puppeteer`是`13.7.0`版本的，不推荐使用外置`chromium`
+
 ---
 
 ## 克隆仓库
@@ -70,7 +72,6 @@ yarn install -P
 
 </details>
 
-
 ## 前台启动
 
 ```bash
@@ -101,11 +102,12 @@ pnpm run log
 
 目前提供了两种连接方式，`WebSocket`和`Http`。  
 
-### `WebSocket(默认)`: 
-  - 优点
-    - 无需占用端口，无需修改`karin`的配置，开箱即用。
-  - 缺点：
-    - 需要将`karin-puppeteer`和`karin`放在同一台服务器、电脑上
+### `WebSocket(默认)`
+
+- 优点
+  - 无需占用端口，无需修改`karin`的配置，开箱即用。
+- 缺点：
+  - 需要将`karin-puppeteer`和`karin`放在同一台服务器、电脑上
 
 可配置多个`karin`服务端，在配置文件添加`karinUrl`地址即可
 
@@ -119,14 +121,15 @@ karinUrl:
 
 ```
 
-### `Http(拓展)`: 
-  - 优点
-    - 可以将`karin-puppeteer`和`karin`放在不同的服务器上、不同的网络环境
-    - 如果`karin`有公网环境，可以连接公共的`karin-puppeteer`服务而做到`远程渲染`!
-  - 缺点：
-    - 需要占用端口，`karin`需要另外配置对应的插件
-    - 需要跟`karin`在一个内网或者都处于公网环境，因为需要`互相访问`...
-    - 需要将`karin`作为一个`express`服务器运行`(可能...会有安全问题?)`
+### `Http(拓展)`
+
+- 优点
+  - 可以将`karin-puppeteer`和`karin`放在不同的服务器上、不同的网络环境
+  - 如果`karin`有公网环境，可以连接公共的`karin-puppeteer`服务而做到`远程渲染`!
+- 缺点：
+  - 需要占用端口，`karin`需要另外配置对应的插件
+  - 需要跟`karin`在一个内网或者都处于公网环境，因为需要`互相访问`...
+  - 需要将`karin`作为一个`express`服务器运行`(可能...会有安全问题?)`
 
 此方式为扩展方式，默认关闭
 

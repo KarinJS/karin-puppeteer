@@ -1,0 +1,47 @@
+# html css
+".css": "text/css"
+".html": "text/html"
+".htm": "text/html"
+".js": "application/javascript"
+
+# 图片
+".jpg": "image/jpeg"
+".jpeg": "image/jpeg"
+".png": "image/png"
+".gif": "image/gif"
+".bmp": "image/bmp"
+".tiff": "image/tiff"
+".tif": "image/tiff"
+".svg": "image/svg+xml"
+".ico": "image/x-icon"
+".webp": "image/webp"
+".avif": "image/avif"
+".apng": "image/apng"
+
+# 音频
+".mp3": "audio/mpeg"
+".wav": "audio/wav"
+".ogg": "audio/ogg"
+".flac": "audio/flac"
+".aac": "audio/aac"
+".weba": "audio/webm"
+
+# 视频
+".mp4": "video/mp4"
+".webm": "video/webm"
+
+# 字体
+".ttf": "font/ttf"
+".otf": "font/otf"
+".eot": "application/vnd.ms-fontobject"
+".sfnt": "font/sfnt"
+".woff": "font/woff"
+".woff2": "font/woff2"
+
+# 文本
+".txt": "text/plain"
+".json": "application/json"
+".xml": "application/xml"
+".pdf": "application/pdf"
+".doc": "application/msword"
+".docx": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"

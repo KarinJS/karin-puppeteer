@@ -4,3 +4,5 @@ node_modules
 pnpm-lock.yaml
 config/config/config.yaml
 package-lock.json
+/data
+/config/config
