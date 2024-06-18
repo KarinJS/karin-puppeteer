@@ -1,0 +1,65 @@
+html {
+  .bg-success {
+    color: white !important;
+  }
+}
+
+.v-row + .v-row {
+  margin-top: 0px;
+}
+
+.v-divider {
+  opacity: 1;
+  border-color: rgba(var(--v-theme-borderLight), 0.36);
+}
+
+.v-selection-control {
+  flex: unset;
+}
+
+.customizer-btn .icon {
+  animation: progress-circular-rotate 1.4s linear infinite;
+  transform-origin: center center;
+  transition: all 0.2s ease-in-out;
+}
+
+.no-spacer {
+  .v-list-item__spacer {
+    display: none !important;
+  }
+}
+
+/* 横向滚动条样式 */
+::-webkit-scrollbar:horizontal {
+  height: 4px; /* 设置横向滚动条的高度 */
+}
+
+/* 竖向滚动条样式 */
+::-webkit-scrollbar {
+  width: 4px; /* 设置竖向滚动条的宽度 */
+}
+
+/* 横向滚动条滑块样式 */
+::-webkit-scrollbar-thumb:horizontal {
+  background: linear-gradient(to right, #ffffff11 0%, #e9c0db25 40%, #e6c0fc80 45%, #d0a8ff80 55%, #e9c0db25 60%, #ffffff11 100%);
+  border-radius: 1.5px; /* 圆角 */
+}
+
+/* 竖向滚动条滑块样式 */
+::-webkit-scrollbar-thumb:vertical {
+  background: linear-gradient(to bottom, #ffffff11 0%, #e9c0db25 40%, #e6c0fc80 45%, #d0a8ff80 55%, #e9c0db25 60%, #ffffff11 100%);
+  border-radius: 1.5px; /* 圆角 */
+}
+
+/* 滚动条轨道样式 */
+::-webkit-scrollbar-track {
+  background: #fff; /* 轨道颜色 */
+  border-radius: 1.5px; /* 圆角 */
+}
+
+
+@keyframes progress-circular-rotate {
+  100% {
+    transform: rotate(270deg);
+  }
+}
