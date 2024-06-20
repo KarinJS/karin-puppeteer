@@ -33,7 +33,7 @@
     "vue3-perfect-scrollbar": "1.6.1",
     "vue3-print-nb": "0.1.4",
     "vue3-sfc-loader": "^0.9.5",
-    "vuetify": "3.5.4",
+    "vuetify": "3.6.10",
     "webpack-plugin-vuetify": "^3.0.1"
   },
   "devDependencies": {
