@@ -1,5 +1,5 @@
 <template>
-  <component v-if="widget.remote" :is="widget.remote" :data="widget.data" />
+  <component v-if="widget.remote" :is="widget.remote" :data="widget.data" id="widget" />
   <v-row v-else no-gutters class="h-screen">
     <v-col class="d-flex align-center justify-center">
       <div class="text-center">
