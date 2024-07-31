@@ -8,8 +8,15 @@
 
 ## 克隆仓库
 
+
+### 国外推荐(GitHub)
 ```bash
-git clone https://github.com/KarinJS/karin-puppeteer.git
+git clone --depth=1 https://github.com/KarinJS/karin-puppeteer.git
+```
+
+### 国内推荐(ghproxy)
+```bash
+git clone --depth=1 https://mirror.ghproxy.com/https://github.com/KarinJS/karin-puppeteer.git
 ```
 
 ## 进入目录
